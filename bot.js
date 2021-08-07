@@ -242,6 +242,6 @@ client.on('ready', () => {
 		.catch(console.log);
 });
 
-client.login('ODYwOTkwODU5MzQ0MzQ3MTU2.YODSOQ.DXlMo8tDduGpA-HJI6BNb-qsqw0')
+client.login(process.env.token)
 
 // Credits: Huntress of the Fallen
