@@ -56,6 +56,7 @@ body {
 
 .animate__animated.animate__zoomInDown {
   --animate-duration: 3s;
+  --animate-delay: 2s;
 }
 
 .animate__animated.animate__rollOut {
