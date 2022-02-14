@@ -9,6 +9,9 @@ router.post('/', function (req, res, next) {
   if (req.body.password.toLowerCase() == 'anchovy' || req.body.password.toLowerCase() == 'anchovies') {
     res.render('first', { title: 'Andika & Лилия' });
   }
+  else if (req.body.password.toLowerCase() == 'valentine' || req.body.password.toLowerCase() == 'valentines') {
+    res.render('valentine', { title: 'Andika & Лилия' });
+  }
   else {
     res.render('index', { title: 'Jean & Soph', responded: '' });
   }
