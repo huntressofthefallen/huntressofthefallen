@@ -20,6 +20,10 @@ router.post('/', function (req, res, next) {
     res.render('valentine', {
       title: 'Andika & Лилия'
     });
+  } else if (req.body.password.toLowerCase() == 'anniversary' || req.body.password.toLowerCase() == 'anniversaries') {
+    res.render('anniversary', {
+      title: 'Andika & Лилия'
+    });
   } else {
     res.render('index', {
       title: 'Jean & Soph',
