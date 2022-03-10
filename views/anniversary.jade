@@ -1,0 +1,25 @@
+extends layouttwo
+
+block content
+  .text-center
+    video(id="rotate" width="100%" height="auto" autoplay loop muted)
+      source(src="/videos/Rotate_Phone.mp4" type="video/mp4")
+      | Your browser does not support the video tag.
+    video(id="main" width="auto" height="100%" autoplay control)
+      source(src="/videos/Record_2021-11-30-10-34-49_d363933d0b71266cda36dcfa515e1b15.mp4" type="video/mp4")
+      | Your browser does not support the video tag.
+  script.
+    setInterval(() => {
+      var w = window.innerWidth;
+      var h = window.innerHeight;
+      if (w < h) {
+        document.getElementById("rotate").style.display = "";
+        document.getElementById("main").style.display = "none";
+        document.getElementById("main").pause();
+      }
+      else {
+        document.getElementById("rotate").style.display = "none";
+        document.getElementById("main").style.display = "";
+        document.getElementById("main").play();
+      }
+    }, 500)

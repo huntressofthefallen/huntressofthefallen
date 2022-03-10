@@ -20,7 +20,7 @@ router.post('/', function (req, res, next) {
     res.render('valentine', {
       title: 'Andika & Лилия'
     });
-  } else if (req.body.password.toLowerCase() == 'anniversary' || req.body.password.toLowerCase() == 'anniversaries') {
+  } else if (req.body.password.toLowerCase() == '1stanniversary' || req.body.password.toLowerCase() == '1stanniv') {
     res.render('anniversary', {
       title: 'Andika & Лилия'
     });
